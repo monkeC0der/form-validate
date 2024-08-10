@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validate</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="index.js" type="module"></script>
+    <div id="form-container">
+      <form action="" id="form" novalidate>
+        <span>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailInput" />
+        </span>
+        <p class="message" id="emailMessage"></p>
+        <span>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="countryInput" />
+        </span>
+        <p class="message" id="countryMessage"></p>
+        <span>
+            <label for="postal">Postal Code</label>
+            <input type="text" name="postal" id="postalInput">
+        </span>
+        <p class="message" id="postalMessage"></p>
+        <span>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="passwordInput">
+        </span>
+        <span>
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" name="passwordConfirm" id="passwordConfirmInput">
+        </span>
+        <p class="message" id="passwordConfirmMessage"></p>
+            <button type="submit" id="submitButton">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
